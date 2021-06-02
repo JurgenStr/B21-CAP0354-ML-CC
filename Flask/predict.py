@@ -16,10 +16,18 @@ def do_predict(data):
     result = int(np.argmax(prediction))
     class_name = class_names[result]
     percent = float(np.max(prediction * 100))
-    jsonDict = {
-        'predClass': result,
-        'className': class_name,
-        'percentage': percent,
-        'prediction': new_prediction,
-    }
+    if percent < 70.0:
+        jsonDict = {
+            'predClass': -1,
+            'className': 'unknown',
+            'percentage': 0,
+            'prediction': new_prediction,
+        }
+    else:
+        jsonDict = {
+            'predClass': result,
+            'className': class_name,
+            'percentage': percent,
+            'prediction': new_prediction,
+        }
     return json.dumps(jsonDict)
