@@ -5,7 +5,7 @@ import numpy as np
 import base64
 # from keras.preprocessing import image
 
-model = tf.keras.models.load_model('./mobilenetv3_edit_v1')
+model = tf.keras.models.load_model('./mobilenetv3_edit_v2')
 class_names = ['Fresh Apple', 'Fresh Banana', 'Fresh Lemon', 'Fresh Orange',
                'Rotten Apple', 'Rotten Banana', 'Rotten Lemon', 'Rotten Orange',
                'Uncategorized']
