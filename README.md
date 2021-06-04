@@ -2,9 +2,9 @@
 
 ## Team
 
-Adam Ramadhan - A1511725
-Muharroman Attoriq Zayzda - A0080846
-Juandito Batara Kuncoro - M0080845
+Adam Ramadhan - A1511725  
+Muharroman Attoriq Zayzda - A0080846  
+Juandito Batara Kuncoro - M0080845  
 
 ## Capstone Project Introduction
 
@@ -13,6 +13,5 @@ Currently, some of the fruit and vegetable industry in Indonesia are still lacki
 
 ## Repository
 
-[Android](https://github.com/adamramadhn/B21-CAP0354)
-[ML - CC](https://github.com/JurgenStr/B21-CAP0354-ML-CC)
-
+[Android](https://github.com/adamramadhn/B21-CAP0354)  
+[ML - CC](https://github.com/JurgenStr/B21-CAP0354-ML-CC)  
