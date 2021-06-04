@@ -6,8 +6,9 @@ import base64
 # from keras.preprocessing import image
 
 model = tf.keras.models.load_model('./mobilenetv3_edit_v1')
-class_names = ['freshapples', 'freshbanana', 'freshlemon', 'freshoranges',
-               'rottenapples', 'rottenbanana', 'rottenlemon', 'rottenoranges']
+class_names = ['Fresh Apple', 'Fresh Banana', 'Fresh Lemon', 'Fresh Orange',
+               'Rotten Apple', 'Rotten Banana', 'Rotten Lemon', 'Rotten Orange',
+               'Uncategorized']
 
 
 def do_predict(data):
@@ -16,18 +17,10 @@ def do_predict(data):
     result = int(np.argmax(prediction))
     class_name = class_names[result]
     percent = float(np.max(prediction * 100))
-    if percent < 70.0:
-        jsonDict = {
-            'predClass': -1,
-            'className': 'unknown',
-            'percentage': 0,
-            'prediction': new_prediction,
-        }
-    else:
-        jsonDict = {
-            'predClass': result,
-            'className': class_name,
-            'percentage': percent,
-            'prediction': new_prediction,
-        }
+    jsonDict = {
+        'predClass': result,
+        'className': class_name,
+        'percentage': percent,
+        'prediction': new_prediction,
+    }
     return json.dumps(jsonDict)
