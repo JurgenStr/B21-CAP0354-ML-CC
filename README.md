@@ -8,8 +8,9 @@ Juandito Batara Kuncoro - M0080845
 
 ## Capstone Project Introduction
 
-In this age of Industry 4.0, industries are beginning to implement digital integration to boost their production efficiency. According to Anton Setiyawan, Director of Digital Economy Protection of Badan Siber dan Sandi Negara (BSSN) of Indonesia, there will be more Internet of Things (IoT) ecosystem users than the number of smartphones users in Indonesia.  
-Currently, some of the fruit and vegetable industry in Indonesia are still lacking digital integration and automation for quality checks. By developing a Machine Learning model for fruit / vegetable quality classification in a mobile dashboard, we hope that this will be the first step for the development of IoT implementation in the fruit and vegetable industry, especially in Indonesia.
+In this age of Industry 4.0, industries are beginning to implement digital integration to boost their production efficiency. According to Anton Setiyawan, Director of Digital Economy Protection of Badan Siber dan Sandi Negara (BSSN) of Indonesia, there will be more Internet of Things (IoT) ecosystem users than the number of smartphones users in Indonesia.
+
+Currently, some of the fruit and vegetable industry in Indonesia are still lacking digital integration and automation for quality checks. By developing a Machine Learning model for fruit / vegetable quality classification in a mobile dashboard, we hope that this will be the first step for the development of IoT implementation in the fruit and vegetable industry, especially in Indonesia.  
 
 This app is able to identify a number of fruits and determine its quality with a Machine Learning model. And then it will insert the data into a database, which will save all the fruit info which is saved into it. Currently the classifications are limited to:
 
@@ -36,6 +37,7 @@ This app works by getting pictures from the user’s gallery, and then sending t
   - Create ImageDataGenerator with augmentation parameters
   - Apply *flow_from_directory* to each of the dataset categories, and save as PNG
   - Zip the augmented images, and download  
+
 - Model Building
   - Mount your Google Drive, download dataset from Kaggle (requires Kaggle API), and unzip additional datasets
   - Make sure that all categories are listed as a directory in the dataset folder
@@ -44,6 +46,7 @@ This app works by getting pictures from the user’s gallery, and then sending t
   - Build the model architecture, and set callbacks
   - Fit the model, and evaluate it
   - Visualize the result, and convert model into SavedModel and TFLite format  
+
 - Model Deployment
   - Set up a Compute Engine VM and a Cloud Storage Bucket
   - Upload SavedModel to the Bucket
