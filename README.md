@@ -32,3 +32,10 @@ Currently, some of the fruit and vegetable industry in Indonesia are still lacki
   - Build the model architecture, and set callbacks
   - Fit the model, and evaluate it
   - Visualize the result, and convert model into SavedModel and TFLite format
+- Model Deployment
+  - Set up a Compute Engine VM and a Cloud Storage Bucket
+  - Upload SavedModel to the Bucket
+  - Open VM SSH, and clone a repository containing Flask scripts
+  - Install virtual environment and necessary libraries
+  - Download SavedModel from Cloud Storage Bucket
+  - Set up NginX and Gunicorn to set up web server
