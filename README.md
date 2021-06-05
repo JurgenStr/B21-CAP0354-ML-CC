@@ -35,7 +35,7 @@ This app works by getting pictures from the user’s gallery, and then sending t
   - Make sure that all categories are listed as a directory in the dataset folder
   - Create ImageDataGenerator with augmentation parameters
   - Apply *flow_from_directory* to each of the dataset categories, and save as PNG
-  - Zip the augmented images, and download
+  - Zip the augmented images, and download  
 - Model Building
   - Mount your Google Drive, download dataset from Kaggle (requires Kaggle API), and unzip additional datasets
   - Make sure that all categories are listed as a directory in the dataset folder
@@ -43,7 +43,7 @@ This app works by getting pictures from the user’s gallery, and then sending t
   - Create ImageDataGenerator for train, validation and test data
   - Build the model architecture, and set callbacks
   - Fit the model, and evaluate it
-  - Visualize the result, and convert model into SavedModel and TFLite format
+  - Visualize the result, and convert model into SavedModel and TFLite format  
 - Model Deployment
   - Set up a Compute Engine VM and a Cloud Storage Bucket
   - Upload SavedModel to the Bucket
