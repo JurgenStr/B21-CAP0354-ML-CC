@@ -11,6 +11,18 @@ Juandito Batara Kuncoro - M0080845
 In this age of Industry 4.0, industries are beginning to implement digital integration to boost their production efficiency. According to Anton Setiyawan, Director of Digital Economy Protection of Badan Siber dan Sandi Negara (BSSN) of Indonesia, there will be more Internet of Things (IoT) ecosystem users than the number of smartphones users in Indonesia.  
 Currently, some of the fruit and vegetable industry in Indonesia are still lacking digital integration and automation for quality checks. By developing a Machine Learning model for fruit / vegetable quality classification in a mobile dashboard, we hope that this will be the first step for the development of IoT implementation in the fruit and vegetable industry, especially in Indonesia.
 
+This app is able to identify a number of fruits and determine its quality with a Machine Learning model. And then it will insert the data into a database, which will save all the fruit info which is saved into it. Currently the classifications are limited to:
+
+- Apple,
+- Banana,
+- Lemon,
+- Orange, and
+- Uncategorized
+
+And the app will also tell us whether the fruit is fresh or rotten. The similarity percentage we got from the machine learning model will also be identified.
+
+This app works by getting pictures from the user’s gallery, and then sending those pictures to the machine learning model deployed on Virtual Machine Instance with Cloud Computing, where the app will fetch the result of the classification.
+
 ## Repository
 
 - [Android](https://github.com/adamramadhn/B21-CAP0354)  
